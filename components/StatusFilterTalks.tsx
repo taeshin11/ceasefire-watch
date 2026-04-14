@@ -23,6 +23,29 @@ interface Talk {
 
 const STATUSES = ['all', 'active', 'stalled', 'collapsed', 'agreed']
 
+const filterStyles: Record<string, { active: string; inactive: string }> = {
+  all: {
+    active: 'bg-slate-800 text-white',
+    inactive: 'bg-white border border-slate-200 text-slate-600 hover:bg-slate-50',
+  },
+  active: {
+    active: 'bg-emerald-600 text-white shadow-lg shadow-emerald-500/25',
+    inactive: 'bg-white border border-slate-200 text-slate-600 hover:bg-emerald-50 hover:border-emerald-200',
+  },
+  stalled: {
+    active: 'bg-amber-500 text-white shadow-lg shadow-amber-500/25',
+    inactive: 'bg-white border border-slate-200 text-slate-600 hover:bg-amber-50 hover:border-amber-200',
+  },
+  collapsed: {
+    active: 'bg-red-500 text-white shadow-lg shadow-red-500/25',
+    inactive: 'bg-white border border-slate-200 text-slate-600 hover:bg-red-50 hover:border-red-200',
+  },
+  agreed: {
+    active: 'bg-blue-500 text-white shadow-lg shadow-blue-500/25',
+    inactive: 'bg-white border border-slate-200 text-slate-600 hover:bg-blue-50 hover:border-blue-200',
+  },
+}
+
 export default function StatusFilterTalks({ talks, locale }: { talks: Talk[]; locale: string }) {
   const [filter, setFilter] = useState('all')
 
@@ -39,19 +62,20 @@ export default function StatusFilterTalks({ talks, locale }: { talks: Talk[]; lo
   return (
     <>
       <div className="flex flex-wrap gap-2 mb-6">
-        {STATUSES.map(s => (
-          <button
-            key={s}
-            onClick={() => setFilter(s)}
-            className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-              filter === s
-                ? 'bg-emerald-600 text-white'
-                : 'bg-white border border-gray-300 text-gray-600 hover:bg-gray-50'
-            }`}
-          >
-            {s.charAt(0).toUpperCase() + s.slice(1)} ({counts[s as keyof typeof counts]})
-          </button>
-        ))}
+        {STATUSES.map(s => {
+          const styles = filterStyles[s] ?? filterStyles.all
+          return (
+            <button
+              key={s}
+              onClick={() => setFilter(s)}
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
+                filter === s ? styles.active : styles.inactive
+              }`}
+            >
+              {s.charAt(0).toUpperCase() + s.slice(1)} ({counts[s as keyof typeof counts]})
+            </button>
+          )
+        })}
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         {filtered.map(talk => (

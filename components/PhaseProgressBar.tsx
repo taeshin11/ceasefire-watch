@@ -1,15 +1,14 @@
 export default function PhaseProgressBar({ phase, phaseMax, label }: { phase: number; phaseMax: number; label: string }) {
-  const pct = Math.round((phase / phaseMax) * 100)
   return (
     <div className="mt-2">
-      <div className="flex justify-between items-center mb-1">
-        <span className="text-xs text-gray-500">Phase {phase}/{phaseMax}</span>
-        <span className="text-xs text-gray-600 font-medium">{label}</span>
+      <div className="flex items-center justify-between text-xs text-slate-500 mb-1.5">
+        <span className="font-medium">{label}</span>
+        <span className="bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded-full font-semibold">Phase {phase}/{phaseMax}</span>
       </div>
-      <div className="w-full bg-gray-200 rounded-full h-2">
+      <div className="h-1.5 bg-slate-100 rounded-full overflow-hidden">
         <div
-          className="bg-emerald-500 h-2 rounded-full transition-all"
-          style={{ width: `${pct}%` }}
+          className="h-full bg-gradient-to-r from-emerald-400 to-emerald-500 rounded-full transition-all duration-1000"
+          style={{ width: `${Math.round((phase / phaseMax) * 100)}%` }}
         />
       </div>
     </div>
