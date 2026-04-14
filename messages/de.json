@@ -1,0 +1,8 @@
+{
+  "home": {"title":"Waffenstillstand-Watch","subtitle":"Friedensverhandlungs-Tracker","description":"Verfolgen Sie laufende und festgefahrene Friedensverhandlungen weltweit"},
+  "status": {"active":"Aktiv","stalled":"Festgefahren","collapsed":"Gescheitert","agreed":"Vereinbart"},
+  "card": {"phase":"Phase","mediator":"Vermittler","last_meeting":"Letztes Treffen","next_meeting":"Nächstes Treffen","no_meeting":"Nicht geplant","view_details":"Details"},
+  "filter": {"all":"Alle","active":"Aktiv","stalled":"Festgefahren","collapsed":"Gescheitert","agreed":"Vereinbart"},
+  "footer": {"tagline":"Überwachung globaler Friedensverhandlungen","today_visits":"Heute","total_visits":"Gesamt"},
+  "nav": {"home":"Start","about":"Über uns"}
+}

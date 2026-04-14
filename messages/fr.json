@@ -1,0 +1,8 @@
+{
+  "home": {"title":"Surveillance du Cessez-le-feu","subtitle":"Suivi des Négociations de Paix","description":"Suivre les négociations de paix en cours et bloquées dans le monde"},
+  "status": {"active":"Actif","stalled":"Bloqué","collapsed":"Effondré","agreed":"Convenu"},
+  "card": {"phase":"Phase","mediator":"Médiateur","last_meeting":"Dernière Réunion","next_meeting":"Prochaine Réunion","no_meeting":"Non programmé","view_details":"Voir Détails"},
+  "filter": {"all":"Tous","active":"Actif","stalled":"Bloqué","collapsed":"Effondré","agreed":"Convenu"},
+  "footer": {"tagline":"Surveillance des négociations de paix mondiales","today_visits":"Aujourd'hui","total_visits":"Total"},
+  "nav": {"home":"Accueil","about":"À Propos"}
+}

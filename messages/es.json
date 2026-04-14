@@ -1,0 +1,8 @@
+{
+  "home": {"title":"Vigilancia de Alto el Fuego","subtitle":"Rastreador de Negociaciones de Paz","description":"Seguimiento de negociaciones de paz en curso y estancadas en todo el mundo"},
+  "status": {"active":"Activo","stalled":"Estancado","collapsed":"Colapsado","agreed":"Acordado"},
+  "card": {"phase":"Fase","mediator":"Mediador","last_meeting":"Última Reunión","next_meeting":"Próxima Reunión","no_meeting":"Sin programar","view_details":"Ver Detalles"},
+  "filter": {"all":"Todos","active":"Activo","stalled":"Estancado","collapsed":"Colapsado","agreed":"Acordado"},
+  "footer": {"tagline":"Monitoreando negociaciones de paz globales","today_visits":"Hoy","total_visits":"Total"},
+  "nav": {"home":"Inicio","about":"Acerca de"}
+}

@@ -1,0 +1,8 @@
+{
+  "home": {"title":"Observatório de Cessar-fogo","subtitle":"Rastreador de Negociações de Paz","description":"Acompanhe negociações de paz em andamento e paralisadas em todo o mundo"},
+  "status": {"active":"Ativo","stalled":"Paralisado","collapsed":"Colapsado","agreed":"Acordado"},
+  "card": {"phase":"Fase","mediator":"Mediador","last_meeting":"Última Reunião","next_meeting":"Próxima Reunião","no_meeting":"Não agendado","view_details":"Ver Detalhes"},
+  "filter": {"all":"Todos","active":"Ativo","stalled":"Paralisado","collapsed":"Colapsado","agreed":"Acordado"},
+  "footer": {"tagline":"Monitorando negociações de paz globais","today_visits":"Hoje","total_visits":"Total"},
+  "nav": {"home":"Início","about":"Sobre"}
+}

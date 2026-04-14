@@ -1,0 +1,8 @@
+{
+  "home": {"title":"停火观察","subtitle":"和平谈判追踪器","description":"追踪全球正在进行和陷入僵局的和平谈判"},
+  "status": {"active":"进行中","stalled":"停滞","collapsed":"崩溃","agreed":"达成协议"},
+  "card": {"phase":"阶段","mediator":"调解人","last_meeting":"最后会议","next_meeting":"下次会议","no_meeting":"未安排","view_details":"查看详情"},
+  "filter": {"all":"全部","active":"进行中","stalled":"停滞","collapsed":"崩溃","agreed":"已达成"},
+  "footer": {"tagline":"监测全球和平谈判","today_visits":"今日","total_visits":"总计"},
+  "nav": {"home":"首页","about":"关于"}
+}

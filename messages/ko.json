@@ -1,0 +1,8 @@
+{
+  "home": {"title":"휴전 감시","subtitle":"평화 협상 추적기","description":"전 세계 진행 중 및 교착 상태의 평화 협상 추적"},
+  "status": {"active":"진행 중","stalled":"교착","collapsed":"결렬","agreed":"합의"},
+  "card": {"phase":"단계","mediator":"중재자","last_meeting":"마지막 회의","next_meeting":"다음 회의","no_meeting":"미정","view_details":"자세히 보기"},
+  "filter": {"all":"전체","active":"진행 중","stalled":"교착","collapsed":"결렬","agreed":"합의"},
+  "footer": {"tagline":"글로벌 평화 협상 모니터링","today_visits":"오늘","total_visits":"전체"},
+  "nav": {"home":"홈","about":"소개"}
+}

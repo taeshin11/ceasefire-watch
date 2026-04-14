@@ -1,0 +1,8 @@
+{
+  "home": {"title":"停戦ウォッチ","subtitle":"平和交渉トラッカー","description":"世界の進行中および停滞した平和交渉を追跡"},
+  "status": {"active":"進行中","stalled":"停滞","collapsed":"崩壊","agreed":"合意"},
+  "card": {"phase":"フェーズ","mediator":"調停者","last_meeting":"最終会議","next_meeting":"次回会議","no_meeting":"未定","view_details":"詳細を見る"},
+  "filter": {"all":"全て","active":"進行中","stalled":"停滞","collapsed":"崩壊","agreed":"合意"},
+  "footer": {"tagline":"グローバル平和交渉の監視","today_visits":"今日","total_visits":"合計"},
+  "nav": {"home":"ホーム","about":"概要"}
+}

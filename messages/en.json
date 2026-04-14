@@ -1,0 +1,8 @@
+{
+  "home": {"title":"Ceasefire Watch","subtitle":"Peace Negotiations Tracker","description":"Track ongoing and stalled peace negotiations worldwide"},
+  "status": {"active":"Active","stalled":"Stalled","collapsed":"Collapsed","agreed":"Agreed"},
+  "card": {"phase":"Phase","mediator":"Mediator","last_meeting":"Last Meeting","next_meeting":"Next Meeting","no_meeting":"Not scheduled","view_details":"View Details"},
+  "filter": {"all":"All","active":"Active","stalled":"Stalled","collapsed":"Collapsed","agreed":"Agreed"},
+  "footer": {"tagline":"Monitoring global peace negotiations","today_visits":"Today","total_visits":"Total"},
+  "nav": {"home":"Home","about":"About"}
+}
