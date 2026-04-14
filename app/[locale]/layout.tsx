@@ -6,8 +6,29 @@ import type { Metadata } from 'next'
 import '../globals.css'
 
 export const metadata: Metadata = {
-  title: 'Ceasefire Watch — Peace Negotiations Tracker',
-  description: 'Track ongoing and stalled peace negotiations worldwide. Phase progress, mediators, and latest updates.',
+  title: {
+    default: 'Ceasefire Watch | Real-Time Intelligence',
+    template: '%s | Ceasefire Watch'
+  },
+  description: 'Tracking active ceasefire negotiations, peace agreements, and violation reports in conflict zones worldwide',
+  keywords: 'ceasefire watch, peace negotiations, armistice, ceasefire violations, conflict resolution',
+  openGraph: {
+    type: 'website',
+    siteName: 'Ceasefire Watch',
+    title: 'Ceasefire Watch | Real-Time Intelligence',
+    description: 'Tracking active ceasefire negotiations, peace agreements, and violation reports in conflict zones worldwide',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Ceasefire Watch',
+    description: 'Tracking active ceasefire negotiations, peace agreements, and violation reports in conflict zones worldwide',
+  },
+  verification: {
+    google: 'add-your-google-site-verification-here',
+  },
+  other: {
+    'google-adsense-account': 'ca-pub-add-your-publisher-id-here',
+  },
 }
 
 export default async function LocaleLayout({

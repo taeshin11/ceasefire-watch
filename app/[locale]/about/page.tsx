@@ -11,7 +11,9 @@ export async function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
-  title: 'About — Ceasefire Watch',
+  title: 'About Us',
+  description: 'Learn about Ceasefire Watch — our mission, methodology, and commitment to transparent conflict intelligence.',
+  keywords: 'ceasefire watch, peace negotiations, armistice, ceasefire violations, conflict resolution, about us, conflict intelligence platform',
 }
 
 export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
@@ -23,23 +25,52 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
       <header className="bg-white border-b border-gray-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 py-3">
           <Link href={`/${locale}`} className="text-xl font-bold text-emerald-800 flex items-center gap-2">
-            <span>🕊️</span> Ceasefire Watch
+            Ceasefire Watch
           </Link>
         </div>
       </header>
       <AdHeader />
-      <main className="max-w-3xl mx-auto px-4 py-8 prose prose-gray">
-        <h1>About Ceasefire Watch</h1>
-        <p>Ceasefire Watch tracks peace negotiations, ceasefire agreements, and diplomatic processes in active conflicts worldwide. We monitor the phase progress, key mediators, and latest developments.</p>
-        <h2>Phase System</h2>
-        <p>Negotiations are tracked across 5 phases from initial talks to implementation. Phase progress reflects the current stage of formal negotiations.</p>
-        <h2>Status Definitions</h2>
-        <ul>
-          <li><strong>Active</strong>: Talks are currently ongoing with scheduled meetings</li>
-          <li><strong>Stalled</strong>: Process is paused but not formally abandoned</li>
-          <li><strong>Collapsed</strong>: Framework has broken down, no active process</li>
-          <li><strong>Agreed</strong>: Agreement reached, implementation underway</li>
-        </ul>
+      <main className="bg-slate-50 min-h-screen">
+        <div className="max-w-4xl mx-auto px-4 py-12">
+          <nav className="text-sm text-slate-500 mb-8">
+            <Link href="/" className="hover:text-slate-700">Home</Link>
+            <span className="mx-2">/</span>
+            <span>About Us</span>
+          </nav>
+
+          <h1 className="text-4xl font-bold text-slate-900 mb-4">About Ceasefire Watch</h1>
+          <p className="text-xl text-slate-600 mb-10 leading-relaxed">Tracking active ceasefire negotiations, peace agreements, and violation reports in conflict zones worldwide</p>
+
+          <div className="space-y-10">
+            <section>
+              <h2 className="text-2xl font-semibold text-slate-800 mb-4">Our Mission</h2>
+              <p className="text-slate-600 leading-relaxed mb-4">Ceasefire Watch was built on a single conviction: that access to timely, accurate conflict intelligence should not be limited to governments, think tanks, or expensive subscription services. We believe that journalists, researchers, policy analysts, students, and engaged citizens all deserve access to the same quality of information to understand the world&apos;s most pressing security challenges.</p>
+              <p className="text-slate-600 leading-relaxed">In a world where armed conflicts shape economies, displace populations, and determine the course of history, we are committed to making conflict data accessible, transparent, and useful for anyone who needs it.</p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold text-slate-800 mb-4">What We Track</h2>
+              <p className="text-slate-600 leading-relaxed mb-4">Ceasefire Watch provides tracking of active ceasefire negotiations, peace agreements, and violation reports in conflict zones worldwide. Our platform aggregates, verifies, and presents this data in a format designed for clarity and usability, so users can quickly understand the current situation and track changes over time.</p>
+              <p className="text-slate-600 leading-relaxed">We cover active conflicts across multiple regions, providing data visualizations, timelines, and detailed analysis that contextualizes raw numbers within broader geopolitical realities.</p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold text-slate-800 mb-4">Our Data Sources &amp; Methodology</h2>
+              <p className="text-slate-600 leading-relaxed mb-4">Our data is compiled from a range of publicly available sources including: official government reports and military briefings, United Nations agencies (OCHA, UNHCR, WFP), established academic conflict databases (ACLED, SIPRI, Uppsala Conflict Data Program), verified open-source intelligence (OSINT) from credentialed researchers, and reporting from internationally recognized news organizations.</p>
+              <p className="text-slate-600 leading-relaxed">We prioritize source transparency and where possible, cross-reference multiple sources before publishing figures. Where sources disagree, we aim to present the range of estimates rather than a single contested figure.</p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold text-slate-800 mb-4">Why This Matters</h2>
+              <p className="text-slate-600 leading-relaxed">Conflict data is inherently sensitive and often politically contested. We recognize this complexity and strive to present information in a factual, non-partisan manner. Our goal is not to advocate for any particular political position, but to ensure that accurate information is available to support informed discussion, humanitarian response, and evidence-based policy. The numbers we track represent real human lives — and that responsibility guides everything we do.</p>
+            </section>
+
+            <section className="bg-white rounded-2xl border border-slate-200 p-6">
+              <h2 className="text-xl font-semibold text-slate-800 mb-3">Contact Us</h2>
+              <p className="text-slate-600">For inquiries, corrections, or partnership opportunities, please reach out at <span className="text-emerald-600 font-medium">contact@ceasefire-watch.vercel.app</span>. We welcome feedback from researchers, journalists, and organizations working in conflict-affected areas.</p>
+            </section>
+          </div>
+        </div>
       </main>
       <footer className="bg-white border-t border-gray-200 mt-12">
         <div className="max-w-7xl mx-auto px-4 py-6 flex items-center justify-end">
