@@ -5,6 +5,8 @@ import { getMessages } from 'next-intl/server'
 import type { Metadata } from 'next'
 import '../globals.css'
 import { FeedbackButton } from '@/components/FeedbackButton'
+import Script from 'next/script'
+import AdMobileSticky from '@/components/ads/AdMobileSticky'
 
 export const metadata: Metadata = {
   title: {
@@ -25,10 +27,10 @@ export const metadata: Metadata = {
     description: 'Tracking active ceasefire negotiations, peace agreements, and violation reports in conflict zones worldwide',
   },
   verification: {
-    google: 'add-your-google-site-verification-here',
+    google: 'WddgcbVJsL2BGHNAje5m6DK56IcR0Mw5UOqozI2Xtrc',
   },
   other: {
-    'google-adsense-account': 'ca-pub-add-your-publisher-id-here',
+    'google-adsense-account': 'ca-pub-7098271335538021',
     'indexnow-key': 'ceasefire-watch-2025',
   },
 }
@@ -76,7 +78,14 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
-        <FeedbackButton siteName="Ceasefire Watch" siteUrl="https://ceasefire-watch.vercel.app" />
+        <AdMobileSticky />
+      <FeedbackButton siteName="Ceasefire Watch" siteUrl="https://ceasefire-watch.vercel.app" />
+      <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7098271335538021"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   )
