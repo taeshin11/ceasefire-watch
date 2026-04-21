@@ -1,8 +1,12 @@
 'use client'
+import { useEffect } from 'react'
+
 export default function AdMobileSticky() {
-  return (
-    <div className="md:hidden fixed bottom-0 left-0 right-0 flex justify-center z-50 bg-white border-t border-gray-200 py-1">
-      <div className="w-[320px] h-[50px] bg-gray-200 flex items-center justify-center text-gray-400 text-xs rounded">[Ad 320×50]</div>
-    </div>
-  )
+  useEffect(() => {
+    const s = document.createElement('script')
+    s.src = 'https://pl29155383.profitablecpmratenetwork.com/51/e5/38/51e538c1b520f2ba83e7217037834a2c.js'
+    s.async = true
+    document.head.appendChild(s)
+  }, [])
+  return null
 }
